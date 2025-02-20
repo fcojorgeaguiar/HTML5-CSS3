@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Estes vídeos estão hospedados no meu próprio servidor.</p>
+    <video poster="Imagens/1.png" src="midia/passarinho.mp4" width="560" controls loop></video>
+    <!--No código abaixo, elenque mídias cada uma dentro de um <source> diferente de acordo com a prioridade para abrir, uma abrirá caso a anterior não for compatível com o navegador-->
+    <video controls width="560" poster="Imagens/2.png" loop>
+        <source src="midia/disco.mp4">
+    </video>
+    <h1>Inserindo vídeo do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/3hng-hmSv2Y?si=GFsbbQUIWQ-NnJie" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <h1>Inserindo vídeo do VIMEO</h1>
+    <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/257399106?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="ANIMATION REEL"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+</body>
+</html>

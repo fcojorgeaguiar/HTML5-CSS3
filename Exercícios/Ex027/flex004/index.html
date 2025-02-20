@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner{
+           background-color: lightsalmon;
+           display: flex;
+           height: 300px;
+           justify-content: space-around;
+           /*
+           A propriedade justify-content justifica os itens de acordo com o eixo principal (main-axis).
+           VALORES:
+           flex-start = os itens são alinhados no início (main-start);
+           flex-end = os itens são alinhados no final (main-end);
+           center = os itens são colocados no centro;
+           space-between = o primeiro item é alinhado no main start, o último no main-end e entre os elementos do meio é colocado espaços iguais;
+           space-evenly = antes e depois dos itens é colocado espaçamentos iguais (inclusive antes do primeiro e depois do último);
+           space-around = divide o espaço total do conteiner de acordo com o número de itens e centraliza os itens dentro desses espaços individuais;
+           */
+           align-items: stretch;
+           /*
+           A propriedade align-itens alinha os itens no eixo transversal (cross-axis).
+           VALORES:
+           stretch = estica os itens;
+           flex-start = vai alinhar no início do eixo transversal (cross-axis);
+           flex-end = vai alinhar no final do eixo transversal (cross-axis).
+           */
+        }
+        div.item{
+           background-color: lightskyblue;
+           border: 1px solid black;
+           text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>

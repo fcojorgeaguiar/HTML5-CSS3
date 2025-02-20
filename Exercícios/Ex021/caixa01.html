@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Imagens/free-caixa-de-deposito-165-739475.webp" type="image/x-icon">
+    <title>Modelo de caixas</title>
+    <style>
+        h1{
+            
+            background-color: aquamarine;
+            height: 300px;
+            width: 300px;
+            
+            /*
+            border-width: 10px;
+            border-style: solid;
+            border-color: darkslategrey;
+           */
+           /* A linha abaixo é uma shorthand, usada para simplificar comandos, e resume as linha acima (a order deve ser respeitada).*/
+
+           border: 10px solid darkslategray;
+           
+            /*padding-top: 10px;
+            padding-right: 10px;
+            padding-bottom: 10px;
+            padding-left: 10px;*/
+           
+            padding: 10px;/*Se as quatro medidas forem iguais, usa-se um único valor.*/
+            
+           margin: 20px 20px 40px 20px;
+
+           outline: 5px dashed salmon;
+        }
+
+        a{
+            border-width: 5px;
+            border-style:dashed;
+            border-color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links</a> são exemplos de caixas inline-level. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

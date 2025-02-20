@@ -1,0 +1,28 @@
+@charset "UTF-8";
+*{
+    /*height: 100%;*/
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, #662400,  #B33F00, #FF6B1A);
+}
+p{
+    text-align: justify;
+}
+h1{
+color: #B33F00;
+text-align: center;
+text-shadow: 1px 1px 0px #521d01;
+}
+h2{
+   color: #FF6B1A;
+}
+main{
+    background-color: white;
+    width: 600px;
+    padding: 10px;
+    margin: auto;/*Dessa forma, o main sempre ficará no meio da página*/
+    border-radius: 20px;/*tag para arredondar os vértices*/
+    box-shadow: 10px 10px 20px #521d01;
+}

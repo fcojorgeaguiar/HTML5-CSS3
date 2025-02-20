@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borda personalizada</title>
+    <style>
+        h1{
+            border: 20px solid black;
+            padding: 20px;
+            border-image-source: url('Imagens/borda.png');
+            border-image-slice: 24;
+            border-image-repeat: repeat;
+            /*
+            Pode-se usar também o shorthand para as três últimas linhas: 
+            border-image: url('Imagens/borda.png') 24 repeat;
+            */
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de Borda</h1>
+</body>
+</html>

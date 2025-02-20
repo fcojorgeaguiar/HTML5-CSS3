@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.conteiner{
+           background-color: lightsalmon;
+           display: flex;
+           flex-flow: row nowrap;
+        }
+        div.item{
+           background-color: lightskyblue;
+           border: 1px solid black;
+           text-align: center;
+           flex-basis: 200px;
+        }
+        div#cxA{
+           flex-shrink: 2;
+           flex-grow: 0;
+           flex-basis: 200px;
+           /*
+           O comandos acima podem ser resumidos pela shorthand 
+           flex: flex-grow flex-shrink flex-basis;
+           */
+        }
+        div#cxB{
+          flex: 1 1 200px;
+        }
+        div#cxC{
+          flex: 3 0 200px;
+        }
+        /*
+        flex: initial é o mesmo que flex: 0 1 auto (valor padrão).
+        flex: none é o mesmo que flex: 0 0 auto (nada flexível).
+        flex: auto é o mesmo que flex: 1 1 auto (máxima flexibilidade).
+        flex: 3 é o mesmo que flex: 3 1 auto (colocando um número, ele modifica na sequência. Colocando apenas um número, ele modifica apenas o primeiro, que no caso é o flex-grow, deixando os outros valores padrão).
+        */
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item" id="cxA">A</div>
+        <div class="item" id="cxB">B</div>
+        <div class="item" id="cxC">C</div>
+    </div>
+</body>
+</html
