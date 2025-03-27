@@ -14,6 +14,17 @@ body{
     height: 100vh;
 }
 
-section flex-content{
-    background-color: lightgray;
+p, h1, h2{
+    margin-bottom: 10px;
+    text-align: justify;
 }
+
+header, section.normal{
+    padding: 20px;
+}
+
+.flex-content{
+    padding: 20px;
+    background-color: gray;
+}
+
