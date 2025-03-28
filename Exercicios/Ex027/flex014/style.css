@@ -19,6 +19,10 @@ p, h1, h2{
     text-align: justify;
 }
 
+img{
+    width: 450px;
+}
+
 header, section.normal{
     padding: 20px;
 }
