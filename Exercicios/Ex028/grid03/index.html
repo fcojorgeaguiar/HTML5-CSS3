@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout na prática</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .conteiner{
+            border: 3px solid blue;
+            margin: 10px;
+            display: grid;
+            grid-template-columns: repeat(3, 120px);
+            grid-auto-flow: column;/*O item adicional estará em uma nova coluna*/
+            grid-template-rows: repeat(3, 80px);
+            grid-auto-rows: 80px;/*Quando forem criadas linhas automaticamente, elas terão a altura aqui indicada*/
+            grid-auto-columns: 120px;/*Quando forem criadas linhas automaticamente, elas terão a largura aqui indicada*/
+            gap: 2px;
+            /*align-items: start;
+            justify-items: center;*/
+            /*As linhas acima estão resumidas na linha abaixo*/
+            place-items: normal normal;
+            /*align-content: space-between;
+            justify-content: end;*/
+             /*As linhas acima estão resumidas na linha abaixo*/
+             place-content: normal normal;
+        }
+        .item{
+            border: 3px solid red;
+            padding: 5px;
+            margin: 1px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteiner">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+        <div class="item">H</div>
+        <div class="item">I</div>
+        <div class="item">J</div>
+    </div>
+</body>
+</html>
